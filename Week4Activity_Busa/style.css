@@ -1,0 +1,148 @@
+/* Reset some default spacing */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Page Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Flexbox Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #777;
+}
+
+/* Main Content */
+
+main {
+    padding: 2rem;
+}
+
+/* Profile Layout */
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.profile-card img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.profile-info ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+/* Form Styling */
+
+.form-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 9rem;
+    background-color: #333;
+    color: white;
+}
+
+/* MEDIA QUERY */
+/* Responsive Design for Screens Below 600px */
+
+@media (max-width: 600px) {
+
+    body {
+        background-color: #dfefff;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-card img {
+        width: 150px;
+    }
+}
